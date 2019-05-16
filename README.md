@@ -1,5 +1,5 @@
 # java-tutorials
-Git
+★ Git Tutorials
 
 Version Control System 기능
 backup
@@ -142,3 +142,89 @@ $ git commit --amend > commit msg or 추가add한 내용 개정한다
 $ git push > 깃 저장소에 푸시됨 !
 
 $ git pull > 깃 저장소에 푸시된 내용들을 로컬저장소로 가져옴 !
+
+
+★ Java Grammars
+
+5/16
+
+ * OOP (Object Oriented Programming, 객체 지향 프로그래밍)
+    부품 객체를 먼저 만들고 이것들을 (필요할 때마다) 하나씩 조립해 완성된 프로그램을 만드는 기법
+    -> OOP 언어 : C++, JAVA
+ * Object(객체) -> 클래스 안에 속성(=필드), 메소드(=함수) 만들어놓고 ..
+
+ * 캡슐화 : 외부의 잘못된 사용으로 객체가 손상되지 않도록, 클래스 내용을 감춘다. (필요한 것만 알려줌)
+    -> 접근제한자(Access Modifier) 사용 (public, private, protected, default)
+
+ * 상속 : 클래스 복사는 public 속성과 메소드만 쓸 수 있기 때문에,
+    클래스 통째로 상속받아온다(B class extends A).. like 부모님 재산 다 내꺼
+
+ * 다형성(Polymorphism) : 같은 타입이지만 실행 결과가 다양한 객체를 대입할 수 있는 성질 .. ?
+    부모 타입에는 모든 자식객체가 대입
+    인터페이스 타입에는 타입 모든 구현 객체가 대입
+
+ * 인스턴스화(instance) -> Scanner sc = new Scanner 에서 객체변수 sc(객체 instance)
+
+ * 식별자 작성 규칙
+    1) 하나 이상의 문자
+    2) 첫글자 숫자 X, 빈칸 X
+    3) $ _ 외의 특수문자 사용 불가
+    4) 자바 키워드 사용 불가 (ex) int for.. )
+    5) 대소문자 구분 .!
+    첫 글자와 연결된 다른 단어 첫글자는 대문자로 .. (관례) ChatClient
+
+ * 한 파일 내에서도 선언한 클래스 개수만큼 .class 파일 생성 (javac.exe 컴파일 -> .class)
+    -> public class는 파일명과 동일한 클래스만 가능 !
+
+ * new 연산자 : 객체 생성 (클래스 복사도 해오고 ..)
+    new Scanner();
+
+ * 생성자(Constructor) : Scanner();
+
+ * 클래스 변수 = new 클래스();    -> 변수: 클래스 복사본 이름..
+
+ * 클래스의 용도
+
+   1) 라이브러리(API: Application Program Interface) 용도
+    -> 다른 클래스에서 이용할 목적으로 만든 클래스 (자체실행X)
+   2) 실행용
+    -> main() 메소드 있는 클래스에서 실행할 목적으로 만든 클래스.
+
+ * 클래스의 구성멤버
+   
+	①필드(속성)      -> 객체(class)의 데이터 저장
+	②생성자          -> 객체(class) 생성시 초기화 역할 담당 ..?
+	③메소드(함수)    -> 객체(class)의 동작
+
+ * boolean : 저장 값이 참 or 거짓인 논리형
+
+ * 필드 초기값
+
+   1) 정수
+    byte 0
+    char \u0000 (빈 공백)
+    short 0
+    int 0
+    long 0L
+
+2) 실수
+/////////////////////////////////
+
+ * 오버로딩 (Function Overloding)
+
+	함수(메소드) 이름은 동일하나 인자(매개변수)의 타입 및 개수가 다름
+
+
+ * 인스턴스 멤버 선언 vs 정적 멤버 서언 기준
+
+    public class Cal {
+	    String color;
+	    stataic double pi = 3.111;
+	    // 공용작업시 모두가 아는 내용은 후에 객체생성 귀찮으니까 바로쓸 수 있도록 static 멤버 선언
+    }
+
+ * 싱글톤
+
+ * import   -> 다른 패키지에서 클래스 호출할 때 ! import java.util.Scanner;
+
+ * Annotation -> 프로그램에 추가정보 제공 .. 컴파일러 한테 ! (metadata) // 사람에게는 주석 !

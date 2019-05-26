@@ -6,7 +6,7 @@ public class Access_main {
 		
 		Access ac = new Access();
 		
-		ac.kor=10; // private 속성이라서 못 씀
+		// ac.kor=10; // private 속성이라서 못 씀
 
 	}
 

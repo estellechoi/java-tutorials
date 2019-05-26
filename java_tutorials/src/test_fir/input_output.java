@@ -1,4 +1,4 @@
-package test;
+package test_fir;
 import java.util.Scanner; // need to be imported from java.util to make the copy of Scanner class.
 public class input_output {
 

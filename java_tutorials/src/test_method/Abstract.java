@@ -1,6 +1,6 @@
 package test_method;
 // 추상 클래스 (Abstract Class)
-// : a type of 상위클래스 (단독 객체 생성 x)
+// : a type of 부모클래스 (단독 객체 생성 x)
 // : 실체클래스들에서 공통으로 사용할? 필드/메소드 정의한 클래스
 
 // how to use
@@ -20,7 +20,7 @@ public abstract class Abstract {
 	public abstract void input(); // will be overridden later.
 	
 	
-	// ⓑ also has methods with {} defined.
+	// ⓑ also can have methods with {} defined.
 	public void print() {
 		System.out.println(" → "+kor);
 	}

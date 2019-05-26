@@ -7,7 +7,7 @@ public class Constructor_main {
 		Constructor con = new Constructor(); // 객체 생성
 		
 		// 싱글톤 ..? ㅠㅠㅠ
-		Constructor c = Constructor.aa(); // -> 다른 클래스에서 이미 new 선언
+		// Constructor c = Constructor.aa(); // -> 다른 클래스에서 이미 new 선언
 		
 		con.kor=99;
 		con.aa();

@@ -16,9 +16,10 @@ public class Test4
    
    // * public static 자료형 함수명() {}
    
-   public static Test4 getInstance() {
+   public static Test4 getInstance(int a, int b) {
 	   
-	   Test4 t4 = new Test4(1, 2); // ?? 여기서 초기값 지정이 필수인가 ??
+	   Test4 t4 = new Test4(a, b);
+	   // ?? 여기서 초기값 지정이 필수? → getInstance 매개변수 활용
 	   return t4;
    }
    

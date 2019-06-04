@@ -1,4 +1,4 @@
-package test_etc;
+package test_String;
 
 public class currentTimeMillis {
 

@@ -1,4 +1,4 @@
-package test_etc;
+package test_String;
 // 문자열을 단위로 잘라서 배열로 만들기
 
 public class Split {

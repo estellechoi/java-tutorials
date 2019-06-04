@@ -1,4 +1,4 @@
-package test_etc;
+package test_String;
 import java.util.Date; // import !
 
 public class Date1 

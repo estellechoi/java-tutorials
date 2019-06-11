@@ -14,6 +14,8 @@ public class util_Calendar {
 		//    public static Calendar getInstance(){} 객체생성 없이 참조
 		
 		Calendar today = Calendar.getInstance();
+		int ap = today.get(Calendar.AM_PM); // 오전 0 오후 1
+		System.out.println(ap);
 		
 		// today.get(int field);
 		int y = today.get(Calendar.YEAR);

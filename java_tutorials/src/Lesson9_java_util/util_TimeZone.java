@@ -8,11 +8,16 @@ public class util_TimeZone {
 		
 		// LA의 시간을 알아보자.
 		
+		// TimeZone.getTimeZone("TimeZone.getAvailableIDs()[i]");
+
 		TimeZone tz = TimeZone.getTimeZone("America/Los_Angeles");
 		
 		Calendar today = Calendar.getInstance(tz);
 		int ap = today.get(Calendar.AM_PM); // 오전 0 오후 1
-		System.out.println(ap);
+		
+		String apKor[] = {"오전", "오후"};
+		
+		System.out.println(apKor[ap]);
 		
 		
 

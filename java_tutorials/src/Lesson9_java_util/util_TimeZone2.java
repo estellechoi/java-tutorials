@@ -5,7 +5,7 @@ public class util_TimeZone2 {
 
 	public static void main(String[] args) {
 		
-		// TimeZone의 available ids (국가 id)
+		// TimeZone available ids (국가 코드)
 
 		String tz[] = TimeZone.getAvailableIDs();
 

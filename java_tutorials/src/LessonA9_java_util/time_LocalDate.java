@@ -25,26 +25,23 @@ public class time_LocalDate {
 		int dayInt = today.getDayOfWeek().getValue();
 
 		// ⓑ LocalDate
-		// isLeapYear() : 윤년 여부
-		LocalDate toto = today.toLocalDate();
-		System.out.println(toto.isLeapYear());
+		LocalDate to = today.toLocalDate();
 		
-		// 윤년인 해에는 true 아니라면 false // today.toLocalDate();
+		// isLeapYear() : 윤년(2월 29일이 있는 해/4년에 1번) 여부
+		// 윤년이면 true 아니면 false
+		System.out.println(to.isLeapYear());
+		
+		String print = year + "년  " + month + "월 " + date + "일 ";
+		print = print + dayKor + " " + hh + " : " + mm + " : " + ss + " : ";
+		
+		System.out.println(print);
 
-		/*
-		 * time 패키지
-		 * 
-		 * LocalDate ->년월일 객체생성: LocalDate today=LocalDate.now(); LocalTime 시분초 객체생성:
-		 * LocalDate today=LocalTime.now(); LocalDateTime 년월일시분초 객체생성: LocalDate
-		 * today=LocalDateTime.now();
-		 * 
-		 * 
-		 * 
-		 */
-
-		String chul = y + "년" + m + "월" + d + "일" + yo + " " + hh + "시 " + mm + "분" + ss + "초";
-		System.out.println(chul);
-
+		// LocalDate() 월일 객체생성
+		// LocalDate today = LocalDate.now();
+		// LocalTime() 시분초 객체생성:
+		// LocalDate today = LocalTime.now();
+		// LocalDateTime 년월일시분초 객체생성
+		// LocalDateTime today = LocalDateTime.now();
 	}
 
 }

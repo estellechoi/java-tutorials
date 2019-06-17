@@ -1,8 +1,9 @@
-package LessonB2_Datebase;
+package LessonB2_Database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class sql_Connection {
 
@@ -15,6 +16,14 @@ public class sql_Connection {
 		// try{} catch{} or function throws Exception (예외처리 필요)
 
 		Connection conn = DriverManager.getConnection(db, user, pw);
+		Statement stmt = conn.createStatement();
+		String sql = "create table test(aa int)";
+		stmt.executeUpdate(sql);
+		
+		// Connection이 메모리에 계속 누적되지 않도록 닫아줌.
+		stmt.close();
+		conn.close();
+		
 	}
 
 	public static void main(String[] args) {

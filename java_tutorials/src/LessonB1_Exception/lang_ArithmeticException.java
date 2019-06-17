@@ -31,6 +31,7 @@ public class lang_ArithmeticException {
 			System.out.println(e.getStackTrace());
 		}
 
+
 	}
 
 }

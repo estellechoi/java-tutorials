@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/java_tutorials/src/LessonA9_java_util/text_SimpleDateFormat.java" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/java_tutorials/src/LessonB1_Exception/lang_ArithmeticException.java" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/java_tutorials/src/LessonB2_Datebase/DB_CONN.java" charset="x-windows-949" />
   </component>

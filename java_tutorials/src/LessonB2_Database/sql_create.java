@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class sql_Connection {
+public class sql_create {
 
 	public static void Test() throws SQLException {
 		String db = "jdbc:mysql://localhost:3306/java?useSSL=false";

@@ -19,9 +19,11 @@ public class do_while_main {
 
 			int x = 0;
 			do {
-				System.out.println("1. 회원 조회하기");
-				System.out.println("2. 회원 입력하기");
-				System.out.println("3. 종료하기");
+				System.out.println("1. 전체 회원 조회");
+				System.out.println("2. 회원 정보 등록");
+				System.out.println("3. 회원 정보 수정");
+				System.out.println("4. 회원 정보 삭제");
+				System.out.println("5. 종료하기");
 				System.out.println("번호 선택 : ");
 				x = sc.nextInt();
 
@@ -32,11 +34,18 @@ public class do_while_main {
 				case 2:
 					db.insert();
 					break;
+				case 3:
+					db.update();
+					break;
+				case 4:
+					db.delete();
+					break;
 				}
-
-			} while (x != 3);
+			} while (x != 5);
 			// 3 이 아닌 경우 무한 반복 (3 입력 시 종료)
 			System.out.println("종료");
+			db.conn.close();
+			db.stmt.close();
 
 		} catch (SQLException e) {
 			System.out.println("SQL exception");

@@ -13,62 +13,30 @@ public class do_while_main {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-
 		try {
-			String db = "jdbc:mysql://localhost:3307/java?useSSL=false";
-			String user = "root";
-			String pw = "1234";
-			Connection conn = DriverManager.getConnection(db, user, pw);
-			Statement stmt = conn.createStatement();
+			// 생성자를 이용해서 객체 생성 (copy class)
+			do_while_methods db = new do_while_methods();
 
 			int x = 0;
 			do {
 				System.out.println("1. 회원 조회하기");
 				System.out.println("2. 회원 입력하기");
 				System.out.println("3. 종료하기");
-
 				System.out.println("번호 선택 : ");
 				x = sc.nextInt();
 
 				switch (x) {
 				case 1:
-					String sqlSelect = "select * from member";
-					ResultSet rs = stmt.executeQuery(sqlSelect);
-					rs.last();
-					int rec = rs.getRow();
-					rs.first();
-					for (int i = 1; i <= rec; i++) {
-						System.out.printf("%10s", rs.getString("name"));
-						System.out.print(" / ");
-						System.out.printf("%10s", rs.getString("phone"));
-						System.out.print(" / ");
-						System.out.printf("%2s", rs.getString("age"));
-						System.out.print(" / ");
-						rs.next();
-						System.out.println("");
-					}
+					db.select();
 					break;
 				case 2:
-					System.out.println("Name : ");
-					String name = sc.next();
-					System.out.println("Age : ");
-					int age = sc.nextInt();
-					System.out.println("City : ");
-					String address = sc.next();
-					System.out.println("Phone number : ");
-					String phone = sc.next();
-
-					String sqlInsert = "insert into member(name, age, address, phone) ";
-					sqlInsert = sqlInsert + "values('" + name + "', " + age + ", '" + address + "', '" + phone + "')";
-					stmt.executeUpdate(sqlInsert);
-
-					// 완료 안내문
-					System.out.println("completed !");
+					db.insert();
 					break;
 				}
 
 			} while (x != 3);
 			// 3 이 아닌 경우 무한 반복 (3 입력 시 종료)
+			System.out.println("종료");
 
 		} catch (SQLException e) {
 			System.out.println("SQL exception");

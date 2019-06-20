@@ -8,7 +8,7 @@ import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;
 
-public class do_while {
+public class do_while_main {
 
 	public static void main(String[] args) {
 

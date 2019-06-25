@@ -13,6 +13,7 @@ public class select_where {
 	Statement stmt;
 	ResultSet rs;
 	String sql;
+	String Member;
 	String name = null;
 	String phone = null;
 	String address = null;
@@ -21,6 +22,7 @@ public class select_where {
 		String db = "jdbc:mysql://localhost:3307/java?useSSL=false";
 		conn = DriverManager.getConnection(db, "root", "1234");
 		stmt = conn.createStatement();
+		Member = "select*from member";
 	}
 
 	// 중복 제거를 위한 메소드
@@ -46,7 +48,7 @@ public class select_where {
 
 	// 실행될 부품들
 	public void selectAll() throws SQLException {
-		sql = "select*from member";
+		sql = Member;
 		rs = stmt.executeQuery(sql);
 		while (rs.next()) {
 			print();
@@ -54,17 +56,17 @@ public class select_where {
 	}
 
 	public void selectName() throws SQLException {
-		sql = "select*from member where name like '%" + name + "%'";
+		sql = Member + " where name like '%" + name + "%'";
 		printIf();
 	}
 
 	public void selectPhone() throws SQLException {
-		sql = "select*from member where phone='" + phone + "'";
+		sql = Member + " where phone='" + phone + "'";
 		printIf();
 	}
 
 	public void selectAddress() throws SQLException {
-		sql = "select*from member where address='" + address + "'";
+		sql = Member + " where address='" + address + "'";
 		printIf();
 	}
 

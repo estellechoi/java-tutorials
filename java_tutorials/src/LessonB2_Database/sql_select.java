@@ -1,5 +1,5 @@
 package LessonB2_Database;
-
+// 전체 데이터 한 번에 조회하기
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Connection;

@@ -56,7 +56,7 @@ public class select_where {
 	}
 
 	public void selectName() throws SQLException {
-		sql = "select*from member where name='" + name + "'";
+		sql = "select*from member where name like '%" + name + "%'";
 		doPrintWhile();
 	}
 

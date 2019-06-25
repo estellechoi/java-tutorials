@@ -46,6 +46,7 @@ public class do_while_methods_refactored {
 		int rec = rs.getRow();
 		rs.first();
 		for (int i = 1; i <= rec; i++) {
+			// 10자리 String으로 출력
 			System.out.printf("%10s", rs.getString("name"));
 			System.out.print("  ");
 			System.out.printf("%10s", rs.getString("phone"));

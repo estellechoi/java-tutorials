@@ -31,25 +31,23 @@ public class select_where {
 		System.out.println("");
 	}
 
-	private void doPrintWhile() throws SQLException {
+	private void printIf() throws SQLException {
 		rs = stmt.executeQuery(sql);
-		if (rs.next()) {
+		if (!(rs.next())) {
+			System.out.println("회원을 찾을 수 없습니다.");
+			System.out.println("");
+
+		} else {
 			do {
 				print();
 			} while (rs.next());
-			
-		} else {
-			System.out.println("회원을 찾을 수 없습니다.");
-			System.out.println("");
 		}
 	}
 
 	// 실행될 부품들
 	public void selectAll() throws SQLException {
-
 		sql = "select*from member";
 		rs = stmt.executeQuery(sql);
-
 		while (rs.next()) {
 			print();
 		}
@@ -57,17 +55,17 @@ public class select_where {
 
 	public void selectName() throws SQLException {
 		sql = "select*from member where name like '%" + name + "%'";
-		doPrintWhile();
+		printIf();
 	}
 
 	public void selectPhone() throws SQLException {
 		sql = "select*from member where phone='" + phone + "'";
-		doPrintWhile();
+		printIf();
 	}
 
 	public void selectAddress() throws SQLException {
 		sql = "select*from member where address='" + address + "'";
-		doPrintWhile();
+		printIf();
 	}
 
 }

@@ -14,9 +14,6 @@ public class select_where {
 	ResultSet rs;
 	String sql;
 	String Member;
-	String name = null;
-	String phone = null;
-	String address = null;
 
 	select_where() throws SQLException {
 		String db = "jdbc:mysql://localhost:3307/java?useSSL=false";
@@ -68,6 +65,23 @@ public class select_where {
 	public void selectAddress(String address) throws SQLException {
 		sql = Member + " where address='" + address + "'";
 		printIf(sql);
+	}
+
+	public void search(int n, String str) throws SQLException {
+		switch (n) {
+		case 1:
+			selectAll();
+			break;
+		case 2:
+			selectName(str);
+			break;
+		case 3:
+			selectPhone(str);
+			break;
+		case 4:
+			selectAddress(str);
+			break;
+		}
 	}
 
 }

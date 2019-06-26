@@ -25,22 +25,22 @@ public class select_where_main {
 
 				switch (theSelected) {
 				case 1:
-					db.selectAll();
+					db.search(1, "");;
 					break;
 				case 2:
 					System.out.println("이름 : ");
-					db.name = sc.next();
-					db.selectName(db.name);
+					String name = sc.next();
+					db.search(2, name);
 					break;
 				case 3:
 					System.out.println("번호 : ");
-					db.phone = sc.next();
-					db.selectPhone(db.phone);
+					String phone = sc.next();
+					db.search(3, phone);
 					break;
 				case 4:
 					System.out.println("거주도시 : ");
-					db.address = sc.next();
-					db.selectAddress(db.address);
+					String address = sc.next();
+					db.search(4, address);
 					break;
 				case 5:
 					System.out.println("프로그램 종료");

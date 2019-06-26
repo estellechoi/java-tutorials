@@ -30,17 +30,17 @@ public class select_where_main {
 				case 2:
 					System.out.println("이름 : ");
 					db.name = sc.next();
-					db.selectName();
+					db.selectName(db.name);
 					break;
 				case 3:
 					System.out.println("번호 : ");
 					db.phone = sc.next();
-					db.selectPhone();
+					db.selectPhone(db.phone);
 					break;
 				case 4:
 					System.out.println("거주도시 : ");
 					db.address = sc.next();
-					db.selectAddress();
+					db.selectAddress(db.address);
 					break;
 				case 5:
 					System.out.println("프로그램 종료");

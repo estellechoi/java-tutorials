@@ -33,7 +33,7 @@ public class select_where {
 		System.out.println("");
 	}
 
-	private void printIf() throws SQLException {
+	private void printIf(String sql) throws SQLException {
 		rs = stmt.executeQuery(sql);
 		if (!(rs.next())) {
 			System.out.println("회원을 찾을 수 없습니다.");
@@ -55,19 +55,19 @@ public class select_where {
 		}
 	}
 
-	public void selectName() throws SQLException {
+	public void selectName(String name) throws SQLException {
 		sql = Member + " where name like '%" + name + "%'";
-		printIf();
+		printIf(sql);
 	}
 
-	public void selectPhone() throws SQLException {
+	public void selectPhone(String phone) throws SQLException {
 		sql = Member + " where phone='" + phone + "'";
-		printIf();
+		printIf(sql);
 	}
 
-	public void selectAddress() throws SQLException {
+	public void selectAddress(String address) throws SQLException {
 		sql = Member + " where address='" + address + "'";
-		printIf();
+		printIf(sql);
 	}
 
 }

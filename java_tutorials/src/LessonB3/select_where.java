@@ -45,7 +45,7 @@ public class select_where {
 
 	// 실행될 부품들
 	public void selectAll() throws SQLException {
-		sql = Member;
+		sql = Member+" order by name asc";
 		rs = stmt.executeQuery(sql);
 		while (rs.next()) {
 			print();
@@ -53,17 +53,18 @@ public class select_where {
 	}
 
 	public void selectName(String name) throws SQLException {
-		sql = Member + " where name like '%" + name + "%'";
+		// select*from table where 조건 order by 정렬 (※ 순서 주의)
+		sql = Member + " where name like '%" + name + "%' order by name asc";
 		printIf(sql);
 	}
 
 	public void selectPhone(String phone) throws SQLException {
-		sql = Member + " where phone='" + phone + "'";
+		sql = Member + " where phone='" + phone + "' order by name asc";
 		printIf(sql);
 	}
 
 	public void selectAddress(String address) throws SQLException {
-		sql = Member + " where address='" + address + "'";
+		sql = Member + " where address='" + address + "' order by name asc";
 		printIf(sql);
 	}
 

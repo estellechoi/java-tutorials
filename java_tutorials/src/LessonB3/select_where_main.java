@@ -27,6 +27,7 @@ public class select_where_main {
 				case 1:
 					db.search(1, "");;
 					break;
+					
 				case 2:
 					System.out.println("¿Ã∏ß : ");
 					String name = sc.next();

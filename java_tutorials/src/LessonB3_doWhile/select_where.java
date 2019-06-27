@@ -1,4 +1,4 @@
-package LessonB3;
+package LessonB3_doWhile;
 
 // select*from table where(조건) / order by(정렬)
 import java.sql.Connection;

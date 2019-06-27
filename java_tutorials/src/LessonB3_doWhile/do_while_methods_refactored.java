@@ -1,4 +1,4 @@
-package LessonB3;
+package LessonB3_doWhile;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

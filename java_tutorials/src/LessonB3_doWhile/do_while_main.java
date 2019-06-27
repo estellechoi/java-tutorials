@@ -1,5 +1,5 @@
 // do {y} while(x); 일단 y 실행 후 → 조건 결과에 따라 반복 또는 반복종료 
-package LessonB3;
+package LessonB3_doWhile;
 
 import java.util.Scanner;
 import java.sql.DriverManager;

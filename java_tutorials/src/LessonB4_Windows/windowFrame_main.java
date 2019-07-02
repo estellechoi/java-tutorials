@@ -8,6 +8,8 @@ public class windowFrame_main {
 		// *  부모 클래스를 상속 받았다면, 부모 생성자가 먼저 실행된다
 		windowFrame win = new windowFrame();
 		
+		// JFrame의 생성자 실행 : JFrame(); (윈도우창 생성)
+		
 		
 
 	}

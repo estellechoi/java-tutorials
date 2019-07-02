@@ -12,8 +12,9 @@ public class windowFrame extends JFrame {
 		// ∵ 상속받은 JFrame의 생성자가 먼저 실행되기 때문
 
 		// * 윈도우창 기본 설정 (setVisible, setSize)
+		//   this(자신클래스) 생략 가능
 		this.setVisible(true);
-		this.setSize(300, 300); // this(자신클래스) 생략 가능
+		this.setSize(300, 300); 
 
 		// * 윈도우창이 닫히면 프로그램 종료 설정
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

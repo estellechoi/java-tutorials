@@ -19,8 +19,16 @@ public class awt_BorderLayout extends JFrame {
 		Button btn3 = new Button("클릭3");
 		Button btn4 = new Button("클릭4");
 		Button btn5 = new Button("클릭5");
+		Button btn6 = new Button("클릭6");
 		
-		add("North", btn);
+		// * Panel(); 공간 재분배 (나누고 싶은 공간에 Panel 객체 대입)
+		Panel p = new Panel();
+		p.setLayout(new BorderLayout());
+		p.add("West", btn);
+		p.add("East", btn6);
+		// ※ 같은 버튼 중복사용 불가 !
+		
+		add("North", p);
 		add("South", btn2);
 		add("West", btn3);
 		add("East", btn4);

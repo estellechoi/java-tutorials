@@ -4,26 +4,29 @@ import java.awt.FlowLayout;
 import javax.swing.*;
 import java.awt.*;
 
-public class component_Button extends JFrame {
+public class awt_FlowLayout extends JFrame {
 
-	component_Button() {
+	awt_FlowLayout() {
 		setVisible(true);
 		setSize(300, 200);	
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		// * FlowLayout(); 코드 순서대로 컴포넌트 정렬
+		//   레이아웃 없이는 컴포넌트를 2개 이상 배치 불가능
 		setLayout(new FlowLayout());
 		
-		JButton btn = new JButton("클릭하세요");
+		Button btn = new Button("클릭1");
+		Button btn2 = new Button("클릭2");
+		Button btn3 = new Button("클릭3");
+		Button btn4 = new Button("클릭4");
+		Button btn5 = new Button("클릭5");
+		
 		add(btn);
-		JButton btn2 = new JButton("확인하세요");
 		add(btn2);
-		JButton btn3 = new JButton("클릭1");
 		add(btn3);
-		JButton btn4 = new JButton("클릭2");
 		add(btn4);
-		JButton btn5 = new JButton("클릭3");
 		add(btn5);
+
 	}
 
 }

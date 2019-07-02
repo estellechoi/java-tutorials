@@ -1,10 +1,10 @@
 package LessonB4_Windows;
 
-public class component_Button_main {
+public class awt_FlowLayout_main {
 
 	public static void main(String[] args) {
 		
-		component_Button f = new component_Button();
+		awt_FlowLayout f = new awt_FlowLayout();
 		
 
 	}

@@ -7,7 +7,7 @@ import java.awt.*;
 import javax.swing.*;
 import com.sun.xml.internal.ws.org.objectweb.asm.Label;
 
-public class Frame_awt {
+public class awt_Frame {
 
 	public static void main(String[] args) {
 

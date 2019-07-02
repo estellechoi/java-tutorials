@@ -1,10 +1,10 @@
 package LessonB4_Windows;
 
-public class Flow_main {
+public class awt_FlowLayout_main {
 
 	public static void main(String[] args) {
 		
-		Flow f = new Flow();
+		awt_FlowLayout f = new awt_FlowLayout();
 
 	}
 

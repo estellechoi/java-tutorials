@@ -41,5 +41,4 @@ public class swing_JRadioButton extends JFrame {
 		add(cbox2);
 	
 	}
-
 }

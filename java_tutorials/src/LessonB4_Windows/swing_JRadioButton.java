@@ -15,7 +15,11 @@ public class swing_JRadioButton extends JFrame {
 	// * 방법 : 그룹 변수의 메소드 add를 통해 각 라디오버튼을 호출한다
 	JRadioButton jradio1 = new JRadioButton("호주");
 	JRadioButton jradio2 = new JRadioButton("인도");
-	ButtonGroup btng = new ButtonGroup();
+	ButtonGroup jradioGroup = new ButtonGroup();
+
+	JRadioButton jradio3 = new JRadioButton("미국");
+	JRadioButton jradio4 = new JRadioButton("프랑스");
+
 	
 	swing_JRadioButton() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,18 +28,18 @@ public class swing_JRadioButton extends JFrame {
 		
 		setLayout(new FlowLayout());
 		
-		// * 그룹에서 라디오버튼 호출하기
-		btng.add(jradio1);
-		btng.add(jradio2);
+		// * 그룹없이 라디오버튼 호출하기 
+		add(jradio3);
+		add(jradio4);
 		
-		// * 그룹없이 라디오버튼 호출하기 (호출 안되는데 ?)
-		add(jradio1);
-		add(jradio2);
+		// * 그룹에서 라디오버튼 호출하기 (호출 안되는데 ?)
+		jradioGroup.add(jradio1);
+		jradioGroup.add(jradio2);
 		
 		// * 그루핑된 체크박스 호출하기
 		add(cbox1);
 		add(cbox2);
-	}
 	
+	}
 
 }

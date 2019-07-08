@@ -20,5 +20,4 @@ public class awt_TextArea extends JFrame {
 		add(ta);
 		add(jta);
 	}
-
 }

@@ -34,7 +34,13 @@ public class awt_Choice extends JFrame {
 		jcb = new JComboBox(food);
 		add(jcb);
 		
-		// ? setVisible()을 jcb 앞에 코딩하면 jcb가 안보이는 이유 ? 
+		// ? setVisible()을 jcb 앞에 코딩하면 jcb가 안보이는 이유 ?
+		// 답변 출처 [StackOverFlow]
+		// Once you display the UI, it should not be modified from any thread 
+		// except of the EDT. In the first case you had some "luck", and it worked. 
+		// In the second case probably the time of creation of the JComboBox was 
+		// long enough to prevent you from modifying the UI from a thread 
+		// that is not the EDT.
 		setVisible(true); 
 	}
 }

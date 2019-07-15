@@ -7,6 +7,7 @@ public class EventAndSQL_main {
 	public static void main(String[] args) throws SQLException {
 
 		EventAndSQL f = new EventAndSQL();
+		
 
 	}
 

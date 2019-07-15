@@ -24,14 +24,12 @@ public class implementClass_Focus extends JFrame implements FocusListener {
 	public void focusGained(FocusEvent e) {
 		// = onfocus of javascript
 		System.out.print("focus gained");
-
 	}
 
 	@Override
 	public void focusLost(FocusEvent e) {
 		// = onblur of javascript
 		System.out.print("focus lost");
-
 	}
 
 }

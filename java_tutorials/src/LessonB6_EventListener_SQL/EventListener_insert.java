@@ -12,7 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class EventAndSQL extends JFrame implements ActionListener {
+public class EventListener_insert extends JFrame implements ActionListener {
 
 	// 加己
 	JLabel Lname = new JLabel("捞抚");
@@ -27,7 +27,7 @@ public class EventAndSQL extends JFrame implements ActionListener {
 	Statement stmt;
 
 	// 积己磊
-	EventAndSQL() {
+	EventListener_insert() {
 		createWindow();
 	}
 	

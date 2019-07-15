@@ -6,11 +6,11 @@ import java.awt.event.MouseListener;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 
-public class implementClass_mouse extends JFrame implements MouseListener {
+public class implementClass_Mouse extends JFrame implements MouseListener {
 	
 	JButton btn = new JButton("»Æ¿Œ");
 	
-	implementClass_mouse() {
+	implementClass_Mouse() {
 		btn.addMouseListener(this);
 		add(btn);
 		setLayout(new FlowLayout());

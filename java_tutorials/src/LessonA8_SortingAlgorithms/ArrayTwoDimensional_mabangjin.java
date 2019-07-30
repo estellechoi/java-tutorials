@@ -14,14 +14,13 @@ public class ArrayTwoDimensional_mabangjin {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-//		int n = sc.nextInt();
-		int n = 5;
+		int n = sc.nextInt();
 
 		int arr[][] = new int[n][n];
 		int x = 0;
-		int y = 2;
+		int y = n / 2;
 
-		for (int i = 1; i <= 25; i++) {
+		for (int i = 1; i <= n * n; i++) {
 			arr[x][y] = i;
 			x = x - 1;
 			y = y + 1;

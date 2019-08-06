@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class staticMethod {
 	
-	// 加己 (field)
+	// 加己 (property)
 	static int kor = 100;
 	static int eng = 90;
 	int mat = 100;

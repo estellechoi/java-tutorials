@@ -10,8 +10,12 @@ public class staticMethod_main {
 
 		// cannot call non-static one unless creating an object.
 		staticMethod sm = new staticMethod();
-        // staticMethod.print();
+		// staticMethod.print();
 		sm.print();
+
+		// call non-static
+		TestClass tc = new TestClass();
+		tc.testCall();
 
 	}
 

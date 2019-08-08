@@ -5,7 +5,7 @@ package LessonA4_Constructor;
 //   생성자 생략 (기능 없는 생성자가 실행됨) → 묵시적 생성자 
 class parent {
 
-	int kor = 100;
+	int kor = 90;
 
 	public void print() {
 		System.out.println("parent");
@@ -31,8 +31,8 @@ class daughter extends parent {
 	}
 }
 
-// 실행 클래스
 // * public class의 이름은 파일명과 동일해야 함 *
+//   main() 함수는 public class 에서만 실행
 public class Cons3 {
 
 	public static void main(String[] args) {

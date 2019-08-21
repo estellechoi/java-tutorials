@@ -1,4 +1,5 @@
 // 파일 내용 전체를 복사하고 새로운 파일을 생성해서 붙여넣기
+
 package LessonB8_FileReader;
 import java.io.*;
 

@@ -36,6 +36,7 @@ public class BufferedReader_BufferedWriter {
 		// * 작성하기
 		bw.write(inputStr);
 		
+		// * Buffered 객체를 먼저 close !
 		br.close();
 		bw.close();
 		fr.close();

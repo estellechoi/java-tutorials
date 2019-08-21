@@ -9,8 +9,8 @@ public class FileWriter_ {
 		FileWriter fw = new FileWriter("d:/a.txt");
 		FileWriter fw2 = new FileWriter("d:/b.txt");
 		
-		// write(); 재실행시 기존 내용은 삭제되고 새로운 내용이 작성됨
-		// 기존 내용 삭제없이 내용 추가하고 싶을 때 FileWriter("file", true);
+		// * write(); 재실행시 기존 내용은 삭제되고 새로운 내용이 작성됨
+		// * 기존 내용 삭제없이 내용 추가하고 싶을 때 FileWriter("file", true);
 		FileWriter fw3 = new FileWriter("d:/c.txt", true);
 		
 		Scanner sc = new Scanner(System.in);

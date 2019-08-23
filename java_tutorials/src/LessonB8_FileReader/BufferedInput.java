@@ -24,7 +24,7 @@ public class BufferedInput {
 //		for (int i = 0; i < data.length; i++) {
 //		System.out.println((char) data[i]);
 		// 한글 인식 안되네 ...
-//	}
+//		}
 		
 		// ○ 다른 출력 방법 ! (for문 X, 한글 인식)
 		// * byte 배열을 String 클래스 생성자에 매개변수로 넣어주면 문자열로 변환됨

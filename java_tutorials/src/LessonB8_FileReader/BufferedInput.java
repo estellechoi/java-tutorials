@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class Buffered_input {
+public class BufferedInput {
 
 	public static void main(String[] args) throws IOException {
 
@@ -18,7 +18,7 @@ public class Buffered_input {
 		// * 바이트 단위로 읽어오기
 		byte data[] = new byte[100];
 
-		// 배열의 크기만큼 (100byte) 값 읽어와서 data[] 배열에 저장
+		// * read(byte[]): 배열 크기만큼(100 byte) 파일내용을 읽어오고 data 배열에 저장
 		bis.read(data);
 		
 //		for (int i = 0; i < data.length; i++) {

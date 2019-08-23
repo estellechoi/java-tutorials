@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
-public class streamCopy_image {
+public class StreamCopy_image {
 
 	public static void main(String[] args) throws Exception {
 

@@ -19,7 +19,7 @@ public class StreamCopy {
 		}
 
 		long end = System.currentTimeMillis();
-		System.out.println("걸린시간(1/1000초) : " + (end - start));
+		System.out.println("소요시간(1/1000초) : " + (end - start));
 
 		bis.close();
 		bos.close();

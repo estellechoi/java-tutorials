@@ -1,6 +1,5 @@
 package LessonB8_FileReader;
-
-// * Stream 클래스 : bytes 단위로 읽어오는데 사용
+// * 문자열을 byte 배열로 변환하여 파일 작성하기 / FileOutputStream, BufferedOutputStream
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;

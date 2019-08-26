@@ -1,5 +1,5 @@
 package LessonB8_FileReader;
-// * 문자열을 byte 배열로 변환하여 파일 작성하기 / FileOutputStream, BufferedOutputStream
+// * 문자열을 바이트 배열로(byte[]) 변환 후 파일 작성하기 / new FileOutputStream
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;

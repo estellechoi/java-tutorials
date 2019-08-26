@@ -1,7 +1,6 @@
 package LessonB8_FileReader;
 
 // * Stream 클래스 : bytes 단위로 읽어오는데 사용
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -11,12 +11,11 @@ public class LinkedList_Iterator {
 		LinkedList ll = new LinkedList();
 		ll.add("유진");
 		ll.add("용기");
-		ll.add(1000);
-		
+		ll.add(1000);	
 		System.out.println(ll);
 		
 		// * 지정한 인덱스에 요소 추가하기
-		
+	
 		ll.add(1, "승국");
 		System.out.println(ll);
 

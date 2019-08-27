@@ -1,8 +1,8 @@
-// ArrayList, LinkedList 클래스 → List 인터페이스
+// ArrayList, LinkedList 클래스 → List는 상위 인터페이스
 // * 배열은 한번 정해진 배열의 크기를 바꿀 수 없지만, ArrayList는 크기를 미리 지정하지 않아 얼마든지 많은 수의 값을 저장 가능
 // * ArrayList는 Vector보다 빠름 (동기화X)
 // * 
-package LessonB9_Collection;
+package LessonB9_Collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;

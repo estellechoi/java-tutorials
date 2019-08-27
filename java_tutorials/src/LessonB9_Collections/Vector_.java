@@ -1,5 +1,5 @@
 // * Vector는 자바 1.0 부터 사용하던 클래스 (속도 느림)
-// * Vector의 장점은 스레드 사용시 유리함
+// * Vector의 장점은 스레드 사용시 유리함 (동기화)
 package LessonB9_Collections;
 
 import java.util.Vector;

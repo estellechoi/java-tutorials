@@ -27,8 +27,12 @@ public class Set_ {
 		// * 같은 데이터를 추가하면 데이터 중복이므로 1 개 데이터만 저장됨
 		System.out.println(hs);
 		
+		// * 데이터 삭제 메소드
 		hs.remove("승국");
 		System.out.println(hs);
+		
+		// * Set 집합의 크기 확인 메소드
+		System.out.println(hs.size());
 		
 		// * 반복 데이터를 다루는 Iterator를 사용하여 Set 집합을 출력하기
 		// * 특히 인덱스가 없는 Set 집합의 데이터를 불러올 때 적합

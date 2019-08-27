@@ -1,6 +1,6 @@
 // 배열을 리스트로 변환하기 / ArrayList의 상위 인터페이스 List
 // List는 ArrayList, LinkedList 클래스의 상위 인터페이스
-package LessonB9_Collection;
+package LessonB9_Collections;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-// * 중복/순서 없는 데이터 처리시 Set 사용
+// * 중복/순서 없는 데이터 처리시 HashSet 사용
 package LessonB9_Collections;
 
 import java.util.HashSet;
@@ -6,7 +6,7 @@ import java.util.Set;
 
 import java.util.Iterator;
 
-public class Set_ {
+public class Set_HashSet {
 
 	public static void main(String[] args) {
 
@@ -22,8 +22,8 @@ public class Set_ {
 		hs.add("동현");
 		hs.add("동현");
 		
-		// * Set은 데이터 중복 불가, 순서 없음
-		// * Set은 순서가 없으므로 데이터를 추가한 순서대로 출력되지 않음
+		// * HashSet은 데이터 중복 불가, 순서 없음
+		// * HashSet은 순서가 없으므로 데이터를 추가한 순서대로 출력되지 않음
 		// * 같은 데이터를 추가하면 데이터 중복이므로 1 개 데이터만 저장됨
 		System.out.println(hs);
 		

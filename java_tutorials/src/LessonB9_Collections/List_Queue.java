@@ -14,7 +14,7 @@ package LessonB9_Collections;
 import java.util.Queue;
 import java.util.LinkedList;
 
-public class Queue_ {
+public class List_Queue {
 
 	public static void main(String[] args) {
 		

@@ -5,7 +5,7 @@ package LessonB9_Collections;
 import java.util.Arrays;
 import java.util.List;
 
-public class Arrays_asList {
+public class List_Arrays_asList {
 
 	public static void main(String[] args) {
 		

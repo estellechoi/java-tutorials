@@ -5,13 +5,11 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class Set_TreeSet {
+public class Set_HashSet_lotto {
 
 	public static void main(String[] args) {
 
 		Set<Integer> s1 = new HashSet<Integer>();
-		Set<Integer> s2 = new LinkedHashSet<Integer>();
-		Set<Integer> s3 = new TreeSet<Integer>();
 
 		// * 일반 배열 (중복 발생)
 		int lotto[] = new int[6];

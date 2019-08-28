@@ -7,7 +7,7 @@ package LessonB9_Collections;
 
 import java.util.Stack;
 
-public class Stack_push_pop {
+public class List_Stack {
 
 	public static void main(String[] args) {
 		

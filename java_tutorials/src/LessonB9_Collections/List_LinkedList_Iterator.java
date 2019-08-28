@@ -4,7 +4,7 @@ package LessonB9_Collections;
 
 import java.util.LinkedList;
 
-public class LinkedList_Iterator {
+public class List_LinkedList_Iterator {
 
 	public static void main(String[] args) {
 		

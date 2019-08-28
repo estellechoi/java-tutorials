@@ -7,7 +7,7 @@ package LessonB9_Collections;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class ArrayList_Iterator {
+public class List_ArrayList_Iterator {
 
 	public static void main(String[] args) {
 		

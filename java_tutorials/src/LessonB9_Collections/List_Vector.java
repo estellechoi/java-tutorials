@@ -4,7 +4,7 @@ package LessonB9_Collections;
 
 import java.util.Vector;
 
-public class Vector_ {
+public class List_Vector {
 
 	public static void main(String[] args) {
 
